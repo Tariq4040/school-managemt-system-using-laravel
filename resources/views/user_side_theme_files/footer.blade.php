@@ -1,3 +1,5 @@
+
+<!-- ======= Footer ======= -->
 <footer id="footer">
 
     <div class="footer-top">
@@ -71,4 +73,6 @@
             <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
     </div>
-</footer>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>

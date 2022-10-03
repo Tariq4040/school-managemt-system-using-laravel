@@ -24,8 +24,19 @@ Route::post('/email/verify', function () {
 })->middleware('auth')->name('verification.notice');
 
 Route::get('/', function () {
-    return view('user_side.index');
+    return view('construction_theme.home');
 })->name('welcomePage');
+
+//Other pages route
+Route::view('/about' ,'construction_theme.pages.about')->name('construction_theme.pages.about');
+Route::view('/contact' ,'user_side_pages.contact')->name('user_side_pages.contact');
+Route::view('/services' ,'user_side_pages.services')->name('user_side_pages.services');
+Route::view('/portfolio' ,'user_side_pages.portfolio')->name('user_side_pages.portfolio');
+Route::view('/testimonials' ,'user_side_pages.testimonials')->name('user_side_pages.testimonials');
+Route::view('/pricing' ,'user_side_pages.pricing')->name('user_side_pages.pricing');
+Route::view('/blog' ,'user_side_pages.blog')->name('user_side_pages.blog');
+Route::view('/team' ,'user_side_pages.team')->name('user_side_pages.team');
+
 
 // Category All Route
 Route::get('/category' , [CategoryController::class , 'index'])->name('all_category');
