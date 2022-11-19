@@ -1,5 +1,9 @@
 @extends('admin.admin_master')
 
+@section('title')
+    Category
+@endsection
+
 @section('admin')
 
     <div class="py-12">

@@ -18,6 +18,11 @@ class BrandController extends Controller
         return $this->middleware('auth');
     }
 
+    public function allBrand_sent_templateHome(){
+        $brands = Brand::all();
+        return view('construction_theme.home' , compact('brands'));
+    }
+
     public function index(){
         $brands = Brand::orderBy('updated_at','desc')->paginate(5);
 //        dd($brands->all());

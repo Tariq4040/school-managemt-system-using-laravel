@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>SMS</title>
     @include('admin.backendBody.css_js_external_files.css_js')
+
+
+    <title>SMS ADMIN | @yield('title')
+
+    </title>
 </head>
 
 

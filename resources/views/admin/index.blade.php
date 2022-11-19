@@ -1,5 +1,9 @@
  @extends('admin.admin_master')
 
+ @section('title')
+     Home
+ @endsection
+
  @section('admin')
      <!-- Top Statistics -->
      <div class="row">

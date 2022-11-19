@@ -1,20 +1,15 @@
 @extends('construction_theme.home_master')
 
 @section('title')
-    DashBoard
+    Front-DashBoard
  @endsection
 
     <!-- Mobile Specific Metas
   ================================================== -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Construction Html5 Template">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name=author content="Themefisher">
-    <meta name=generator content="Themefisher Constra HTML Template v1.0">
-
-
-
-</head>
+    <meta name=author content="Muhammad Tariq Ahmad">
+    <meta name=generator content="School Management System v1.0">
 <body>
 
 @section('body_content')
@@ -523,42 +518,13 @@
                     <h3 class="column-title">Happy Clients</h3>
 
                     <div class="row all-clients">
+                        @foreach($brands as $brand)
                         <div class="col-sm-4 col-6">
                             <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client1.png')}}" alt="clients-logo" /></a>
+                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{ asset('images/Brand_Images/'.$brand->brand_image) }}" alt="clients-logo" /></a>
                             </figure>
                         </div><!-- Client 1 end -->
-
-                        <div class="col-sm-4 col-6">
-                            <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client2.png')}}" alt="clients-logo" /></a>
-                            </figure>
-                        </div><!-- Client 2 end -->
-
-                        <div class="col-sm-4 col-6">
-                            <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client3.png')}}" alt="clients-logo" /></a>
-                            </figure>
-                        </div><!-- Client 3 end -->
-
-                        <div class="col-sm-4 col-6">
-                            <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client4.png')}}" alt="clients-logo" /></a>
-                            </figure>
-                        </div><!-- Client 4 end -->
-
-                        <div class="col-sm-4 col-6">
-                            <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client5.png')}}" alt="clients-logo" /></a>
-                            </figure>
-                        </div><!-- Client 5 end -->
-
-                        <div class="col-sm-4 col-6">
-                            <figure class="clients-logo">
-                                <a href="#!"><img loading="lazy" class="img-fluid" src="{{asset('frontend_new_theme/images/clients/client6.png')}}" alt="clients-logo" /></a>
-                            </figure>
-                        </div><!-- Client 6 end -->
-
+                        @endforeach
                     </div><!-- Clients row end -->
 
                 </div><!-- Col end -->

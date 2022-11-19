@@ -23,9 +23,11 @@ Route::post('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
 
-Route::get('/', function () {
-    return view('construction_theme.home');
-})->name('welcomePage');
+//Route::get('/', function () {
+//    return view('construction_theme.home');
+//})->name('welcomePage');
+
+Route::get('/' , [BrandController::class , 'allBrand_sent_templateHome'])->name('homePage');
 
 //Other pages route
 Route::view('/about' ,'construction_theme.pages.about')->name('construction_theme.pages.about');
@@ -71,3 +73,15 @@ Route::middleware([
 
 //Logout controller
 Route::get('/logout' , [UserLogoutController::class , 'logout'])->name('user.logout');
+
+//Testing resource Controller
+
+Route::resource('/test', \App\Http\Controllers\testingResourceController::class);
+
+
+Route::get('test' , function (){
+    $var = print "soething";
+//    dd($var);
+});
+
+//dd($arr->all());

@@ -1,5 +1,10 @@
 @extends('admin.admin_master')
 
+
+@section('title')
+    Brands
+@endsection
+
 @section('admin')
 
     <div class="py-12">

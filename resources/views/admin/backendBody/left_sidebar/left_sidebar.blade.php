@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li >
-                                <a href="{{ route('user.logout') }}">Sign In</a>
+                                <a href="{{ route('user.logout') }}">Sign Out</a>
                             </li>
                         </div>
                     </ul>

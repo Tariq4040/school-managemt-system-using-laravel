@@ -1,5 +1,10 @@
 @extends('admin.admin_master')
 
+
+@section('title')
+    Multi-Images
+@endsection
+
 @section('admin')
 
     <div class="py-12">
