@@ -5,7 +5,7 @@
 @include('construction_theme.hero_section')
 
 <title>
-    SMS USER | @yield('title')
+    Code Master | @yield('title')
 </title>
 
 @yield('body_content')

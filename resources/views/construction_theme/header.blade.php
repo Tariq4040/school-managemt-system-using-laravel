@@ -59,7 +59,7 @@
                         <div id="navbar-collapse" class="collapse navbar-collapse">
                             <ul class="nav navbar-nav mr-auto">
                                 <li class="nav-item dropdown active">
-                                    <a href="{{ route('homePage') }}" class="nav-link">Home </a>
+                                    <a href="{{ route('users.index') }}" class="nav-link">Home </a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -74,19 +74,13 @@
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Projects <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="projects.html">Projects All</a></li>
-                                        <li><a href="projects-single.html">Projects Single</a></li>
-                                    </ul>
+                                    <a href="{{ route('users.blogs') }}" class="nav-link">Our Blog</a>
+
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        <li><a href="services.html">Services All</a></li>
-                                        <li><a href="service-single.html">Services Single</a></li>
-                                    </ul>
+                                    <a href="{{ route('users.services') }}" class="nav-link" >Services</a>
+
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -114,7 +108,7 @@
                                     </ul>
                                 </li>
 
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ route('users.contact') }}">Contact</a></li>
                             </ul>
                         </div>
                     </nav>

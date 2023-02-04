@@ -1,10 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\MultiPictureController;
 use App\Http\Controllers\UserLogoutController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MultiPictureController;
+use App\Http\Controllers\UserControllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,16 +19,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+Route::prefix('users')->group(function(){
+    Route::get('/',[HomeController::class , 'index'])->name('users.index');
+    Route::get('/blogs',[HomeController::class , 'blogs'])->name('users.blogs');
+    Route::get('/services',[HomeController::class , 'services'])->name('users.services');
+    Route::get('/contact',[HomeController::class , 'contact'])->name('users.contact');
+});
+
+
 
 Route::post('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
 
-//Route::get('/', function () {
+// Route::get('/', function () {
 //    return view('construction_theme.home');
-//})->name('welcomePage');
+// })->name('welcomePage');
 
-Route::get('/' , [BrandController::class , 'allBrand_sent_templateHome'])->name('homePage');
+// Route::get('/' , [BrandController::class , 'allBrand_sent_templateHome'])->name('homePage');
 
 //Other pages route
 Route::view('/about' ,'construction_theme.pages.about')->name('construction_theme.pages.about');

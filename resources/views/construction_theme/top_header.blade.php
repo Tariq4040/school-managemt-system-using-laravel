@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-8">
                 <ul class="top-info text-center text-md-left">
-                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Sahiwal Punjab Pakistan</p>
+                    <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Lahore Punjab Pakistan</p>
                     </li>
                 </ul>
             </div>
