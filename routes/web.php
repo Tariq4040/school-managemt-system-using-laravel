@@ -90,7 +90,5 @@ Route::resource('/test', \App\Http\Controllers\testingResourceController::class)
 
 Route::get('test' , function (){
     $var = print "soething";
-//    dd($var);
 });
 
-//dd($arr->all());
