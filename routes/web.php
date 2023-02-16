@@ -65,7 +65,6 @@ Route::get('/all-brand/delete/{id}' , [BrandController::class , 'delete'])->name
 Route::get('/multi-pictures' ,[MultiPictureController::class , 'index'])->name('multi_pictures');
 Route::post('/multi-pictures/store' ,[MultiPictureController::class , 'store'])->name('multi_pictures.store');
 
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -86,7 +85,6 @@ Route::get('/logout' , [UserLogoutController::class , 'logout'])->name('user.log
 Route::resource('/test', \App\Http\Controllers\testingResourceController::class);
 
 
-Route::get('test' , function (){
-    $var = print "soething";
-});
+//here is some dummy route for testing
+Route::get('test' , function (){$var = print "soething";});
 
