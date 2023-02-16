@@ -85,8 +85,5 @@ Route::get('/logout' , [UserLogoutController::class , 'logout'])->name('user.log
 
 Route::resource('/test', \App\Http\Controllers\testingResourceController::class);
 
-
-Route::get('test' , function (){
-    $var = print "soething";
-});
+Route::get('test' , function (){$var = print "soething";});
 
