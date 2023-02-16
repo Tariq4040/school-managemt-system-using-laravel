@@ -26,8 +26,6 @@ Route::prefix('users')->group(function(){
     Route::get('/contact',[HomeController::class , 'contact'])->name('users.contact');
 });
 
-
-
 Route::post('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
