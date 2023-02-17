@@ -15,8 +15,8 @@
                             <li>
                                 <div class="info-box">
                                     <div class="info-box-content">
-                                        <p class="info-box-title">Call Us</p>
-                                        <p class="info-box-subtitle">(+9) 847-291-4353</p>
+                                        <p class="info-box-title">Contact No#</p>
+                                        <p class="info-box-subtitle">(+92) 301 4098040</p>
                                     </div>
                                 </div>
                             </li>
@@ -24,7 +24,7 @@
                                 <div class="info-box">
                                     <div class="info-box-content">
                                         <p class="info-box-title">Email Us</p>
-                                        <p class="info-box-subtitle">office@Constra.com</p>
+                                        <p class="info-box-subtitle">chtariq14409@gmail.com</p>
                                     </div>
                                 </div>
                             </li>
@@ -37,7 +37,7 @@
                                 </div>
                             </li>
                             <li class="header-get-a-quote">
-                                <a class="btn btn-primary" href="contact.html">Get A Quote</a>
+                                <a class="btn btn-primary" href="javascript:void(0)">Get A Quote</a>
                             </li>
                         </ul><!-- Ul end -->
                     </div><!-- header right end -->
@@ -56,22 +56,25 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
-                        <div id="navbar-collapse" class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav mr-auto">
+                        <div id="navbar-collapse" class="collapse navbar-collapse navBarTab">
+                            <ul class="nav navbar-nav mr-auto" >
                                 <li class="nav-item dropdown active">
-                                    <a href="{{ route('users.index') }}" class="nav-link">Home </a>
+                                    <a href="{{ route('users.index') }}" class="nav-link">Home</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
+                                    <a href="{{ route('users.about') }}" class="nav-link">About Us</a>
+                                </li>
+                                <!-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Company <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
-                                        <li><a href="{{ route('construction_theme.pages.about') }}">About Us</a></li>
+                                        <li><a href="{{ route('users.about') }}">About Us</a></li>
                                         <li><a href="team.html">Our People</a></li>
                                         <li><a href="testimonials.html">Testimonials</a></li>
                                         <li><a href="faq.html">Faq</a></li>
                                         <li><a href="pricing.html">Pricing</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
 
                                 <li class="nav-item dropdown">
                                     <a href="{{ route('users.blogs') }}" class="nav-link">Our Blog</a>
@@ -83,7 +86,7 @@
 
                                 </li>
 
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Features <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="typography.html">Typography</a></li>
@@ -97,16 +100,16 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
+                                </li> -->
 
-                                <li class="nav-item dropdown">
+                                <!-- <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">News <i class="fa fa-angle-down"></i></a>
                                     <ul class="dropdown-menu" role="menu">
                                         <li><a href="news-left-sidebar.html">News Left Sidebar</a></li>
                                         <li><a href="news-right-sidebar.html">News Right Sidebar</a></li>
                                         <li><a href="news-single.html">News Single</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
 
                                 <li class="nav-item"><a class="nav-link" href="{{ route('users.contact') }}">Contact</a></li>
                             </ul>
@@ -134,3 +137,13 @@
     <!--/ Navigation end -->
 </header>
 <!--/ Header end -->
+<script>
+    $(document).ready(function(){
+        $('.navBarTab a').on('click', function(){
+        $('.navBarTab .active').removeClass('active');
+        console.log('class has been removed');
+        $(this).addClass('active');
+        console.log('class Added');
+});
+    });
+</script>

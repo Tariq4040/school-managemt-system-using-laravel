@@ -1,7 +1,7 @@
 @extends('construction_theme.home_master')
 
 @section('title')
-    Front-DashBoard
+    Home
  @endsection
 
     <!-- Mobile Specific Metas

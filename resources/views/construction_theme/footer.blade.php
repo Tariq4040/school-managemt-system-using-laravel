@@ -9,13 +9,13 @@
                         labore et dolore magna aliqua.</p>
                     <div class="footer-social">
                         <ul>
-                            <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                            <li><a href="#" aria-label="Facebook"><i
                                         class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                             </li>
-                            <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
+                            <li><a href="#" aria-label="Instagram"><i
                                         class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                            <li><a href="#" aria-label="Github"><i class="fab fa-github"></i></a></li>
                         </ul>
                     </div><!-- Footer social end -->
                 </div><!-- Col end -->
@@ -34,11 +34,11 @@
                 <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
                     <h3 class="widget-title">Services</h3>
                     <ul class="list-arrow">
-                        <li><a href="service-single.html">Pre-Construction</a></li>
-                        <li><a href="service-single.html">General Contracting</a></li>
-                        <li><a href="service-single.html">Construction Management</a></li>
-                        <li><a href="service-single.html">Design and Build</a></li>
-                        <li><a href="service-single.html">Self-Perform Construction</a></li>
+                        <li><a href="{{ route('users.services') }}">Pre-Construction</a></li>
+                        <li><a href="{{ route('users.services') }}">General Contracting</a></li>
+                        <li><a href="{{ route('users.services') }}">Construction Management</a></li>
+                        <li><a href="{{ route('users.services') }}">Design and Build</a></li>
+                        <li><a href="{{ route('users.services') }}">Self-Perform Construction</a></li>
                     </ul>
                 </div><!-- Col end -->
             </div><!-- Row end -->
@@ -52,7 +52,7 @@
                     <div class="copyright-info">
               <span>Copyright &copy; <script>
                   document.write(new Date().getFullYear())
-                </script>, Designed &amp; Developed by <a href="https://themefisher.com">M.Tariq Ahmad</a></span>
+                </script>, Designed &amp; Developed by <a href="https://www.linkedin.com/in/muhammad-tariq-a1920516a/">M.Tariq Ahmad</a></span>
                     </div>
                 </div>
 

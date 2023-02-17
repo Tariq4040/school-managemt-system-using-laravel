@@ -19,4 +19,7 @@ class HomeController extends Controller
     public function contact(){
         return view('codeMaster.frontEnd.contact');
     }
+    public function about(){
+        return view('codeMaster.frontEnd.about');
+    }
 }
