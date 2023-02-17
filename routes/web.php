@@ -27,8 +27,6 @@ Route::prefix('users')->group(function(){
     Route::get('/about',[HomeController::class , 'about'])->name('users.about');
 });
 
-
-
 Route::post('/email/verify', function () {
     return view('auth.verify-email');
 })->middleware('auth')->name('verification.notice');
@@ -67,7 +65,6 @@ Route::get('/all-brand/delete/{id}' , [BrandController::class , 'delete'])->name
 //Multi image Routes
 Route::get('/multi-pictures' ,[MultiPictureController::class , 'index'])->name('multi_pictures');
 Route::post('/multi-pictures/store' ,[MultiPictureController::class , 'store'])->name('multi_pictures.store');
-
 
 Route::middleware([
     'auth:sanctum',
