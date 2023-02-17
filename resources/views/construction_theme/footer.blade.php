@@ -52,7 +52,7 @@
                     <div class="copyright-info">
               <span>Copyright &copy; <script>
                   document.write(new Date().getFullYear())
-                </script>, Designed &amp; Developed by <a href="https://www.linkedin.com/in/muhammad-tariq-a1920516a/">M.Tariq Ahmad</a></span>
+                </script>, Creator and Author &amp; <a href="https://www.linkedin.com/in/muhammad-tariq-a1920516a/"> <strong> M.Tariq Ahmad </strong></a> Click and View my LinkdIn Profile</span>
                     </div>
                 </div>
 
