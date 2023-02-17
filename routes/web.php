@@ -18,12 +18,13 @@ use App\Http\Controllers\UserControllers\HomeController;
 |
 */
 
-
+Route::get('/',[HomeController::class , 'index'])->name('users.index');
 Route::prefix('users')->group(function(){
     Route::get('/',[HomeController::class , 'index'])->name('users.index');
     Route::get('/blogs',[HomeController::class , 'blogs'])->name('users.blogs');
     Route::get('/services',[HomeController::class , 'services'])->name('users.services');
     Route::get('/contact',[HomeController::class , 'contact'])->name('users.contact');
+    Route::get('/about',[HomeController::class , 'about'])->name('users.about');
 });
 
 Route::post('/email/verify', function () {
@@ -87,4 +88,3 @@ Route::resource('/test', \App\Http\Controllers\testingResourceController::class)
 
 //here is some dummy route for testing
 Route::get('test' , function (){$var = print "soething";});
-

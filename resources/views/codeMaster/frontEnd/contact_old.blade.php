@@ -1,10 +1,8 @@
 
-@extends('construction_theme.home_master')
-@section('title')
-    Contact Us
-@endsection
 
-@section('body_content')
+@extends('user_side_theme_files.home_master')
+
+@section('mainBody')
 
     <main id="main">
 
@@ -14,6 +12,10 @@
 
                 <div class="d-flex justify-content-between align-items-center">
                     <h2>Contact</h2>
+                    <ol>
+                        <li><a href="index.blade.php">Home</a></li>
+                        <li>Contact</li>
+                    </ol>
                 </div>
 
             </div>
@@ -36,19 +38,19 @@
                                 <div class="col-lg-4 info">
                                     <i class="icofont-google-map"></i>
                                     <h4>Location:</h4>
-                                    <p>915 HighQ Tower<br>Lahore, Pakistan</p>
+                                    <p>A108 Adam Street<br>New York, NY 535022</p>
                                 </div>
 
                                 <div class="col-lg-4 info mt-4 mt-lg-0">
                                     <i class="icofont-envelope"></i>
                                     <h4>Email:</h4>
-                                    <p>chtariq14409@gmail.com<br>developer14409@gmail.com</p>
+                                    <p>info@example.com<br>contact@example.com</p>
                                 </div>
 
                                 <div class="col-lg-4 info mt-4 mt-lg-0">
                                     <i class="icofont-phone"></i>
                                     <h4>Call:</h4>
-                                    <p>(+92) 301 4098040<br>(+92) 344 4803459</p>
+                                    <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
                                 </div>
                             </div>
                         </div>
@@ -57,7 +59,7 @@
 
                 </div>
 
-                <div class="row mt-5 justify-content-center" data-aos="fade-up" style="margin: top 200px;">
+                <div class="row mt-5 justify-content-center" data-aos="fade-up">
                     <div class="col-lg-10">
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                             <div class="form-row">
@@ -78,15 +80,12 @@
                                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                 <div class="validate"></div>
                             </div>
-                            {{-- <div class="mb-3">
+                            <div class="mb-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div> --}}
-                            
-                            <div class="text-center">
-                                <a class="btn btn-primary header-get-a-quote" href="javascript:void(0)">Send Message</a>
                             </div>
+                            <div class="text-center"><button type="submit">Send Message</button></div>
                         </form>
                     </div>
 
